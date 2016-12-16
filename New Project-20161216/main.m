@@ -45,8 +45,9 @@ int main (int argc, char *argv[])
 
     // Create an instance of a Fraction
 
-    myFraction = [Fraction alloc];
-    myFraction = [myFraction init];
+    // myFraction = [Fraction alloc];
+    // myFraction = [myFraction init];
+    myFraction = [[myFraction alloc] init];
 
     // Set fraction to 1/3
 
@@ -56,8 +57,9 @@ int main (int argc, char *argv[])
     // Display the fraction using the print method
 
     NSLog (@"The value of myFraction is:");
-    [myFraction print];
-    [myFraction release];
+    // [myFraction print];
+    // [myFraction release];
+    [[myFraction print] release];
 
     [pool drain];
     return 0;
